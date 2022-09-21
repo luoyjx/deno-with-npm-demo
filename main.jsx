@@ -17,6 +17,6 @@ const options = {
 };
 
 Deno.serve(
-  { port: 80 },
+  { port: 8080 },
   async () => new Response(await renderToReadableStream(<App />), options),
 );
